@@ -1,6 +1,6 @@
 import {Sequelize} from 'sequelize';
 
-const db = new Sequelize('proyecto_utp', 'root', '', {
+const db = new Sequelize('midb', 'root', '12345', {
 
         host: 'localhost',
         dialect: 'mysql',

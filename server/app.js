@@ -22,7 +22,7 @@ try {
 
 app.get('/', (req,res)=>{
 
-    res.send('HOLA MUNDO!');
+    res.send('HOLA MUNDO!s');
 
 });
 

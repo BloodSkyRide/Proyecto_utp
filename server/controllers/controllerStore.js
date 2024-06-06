@@ -1,13 +1,11 @@
 import Article from '../models/modelStore.js';
-import express from 'express';
+
 
 
 
 // METIODOS PARA EL CRUD DE LA TIENDA
 
-export const  getArticles = async (req, res) => {
-
-    
+export const  getArticles = async (req, res) => { 
     try {
         
         const  articles = await Article.findAll();
@@ -15,10 +13,9 @@ export const  getArticles = async (req, res) => {
         res.json(articles);
         
     } catch (error) {
-        console.log("entro aca al error")
+        console.log("entro aca al error nuevo");
         res.json({ error: error.message})
     }
-
 }
 
 export const getArticle = async (req, res) => {
